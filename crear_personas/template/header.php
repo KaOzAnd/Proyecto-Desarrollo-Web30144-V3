@@ -31,8 +31,9 @@
                 <a href="../paginas_secundarias/galeria2.php">Galeria #2</a>
                 <a href="../paginas_secundarias/galeria_slider.php">Galeria Silder</a>
                 <a href="../paginas_secundarias/calculadora.php">Calculadora</a>
-                <a href="">Blog</a>
                 <a href="../paginas_secundarias/formulario.php">Contacto</a>
+                <a href="../crear_personas/index.php">CRUD Personas</a>
+                <a href="../crear_tareas/index.php">CRUD Tareas</a>
             </nav>
         </div>
     </header>

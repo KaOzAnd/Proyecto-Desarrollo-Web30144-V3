@@ -2,9 +2,11 @@
 
 <?php
     include_once "model/conexion.php";
-    $sentencia = $bd -> query("select * from persona");
-    $persona = $sentencia->fetchAll(PDO::FETCH_OBJ);
+    $sentencia = $bd -> query("select * from tareas");
+    $tareas = $sentencia->fetchAll(PDO::FETCH_OBJ);
     //print_r($persona);
+    date_default_timezone_set('America/Bogota');
+    $fecha=date("Y-m-d H:i:s");
 ?>
 
 <div class="container mt-5">
@@ -75,32 +77,32 @@
             <!-- fin alerta -->
             <div class="card">
                 <div class="card-header">
-                    <h1 class="card-title">Lista de Personas</h1>
+                    <h1 class="card-title">Lista de Tareas</h1>
                 </div>
                 <div class="p-4">
                     <table class="table align-middle">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">apellido</th>
-                                <th scope="col">correo</th>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Fecha Creacion</th>
                                 <th scope="col" colspan="2">Opciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             
                             <?php 
-                                foreach($persona as $dato){ 
+                                foreach($tareas as $dato){ 
                             ?>
 
                             <tr>
-                                <td scope="row"><?php echo $dato->codigo; ?></td>
-                                <td><?php echo $dato->nombre; ?></td>
-                                <td><?php echo $dato->apellido; ?></td>
-                                <td><?php echo $dato->correo; ?></td>
-                                <td><a class="text-success" href="editar.php?codigo=<?php echo $dato->codigo; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="eliminar.php?codigo=<?php echo $dato->codigo; ?>"><i class="bi bi-trash"></i></a></td>
+                                <td scope="row"><?php echo $dato->id; ?></td>
+                                <td><?php echo $dato->title; ?></td>
+                                <td><?php echo $dato->description; ?></td>
+                                <td><?php echo $dato->created; ?></td>
+                                <td><a class="text-success" href="editar.php?id=<?php echo $dato->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                                <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="eliminar.php?id=<?php echo $dato->id; ?>"><i class="bi bi-trash"></i></a></td>
                             </tr>
 
                             <?php 
@@ -120,16 +122,16 @@
                 </div>
                 <form class="p-4" method="POST" action="registrar.php">
                     <div class="mb-3">
-                        <label class="form-label">Nombre: </label>
-                        <input type="text" class="form-control" name="txtNombre" autofocus required>
+                        <label class="form-label">Titulo: </label>
+                        <input type="text" class="form-control" name="txtTitulo" autofocus required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Apellido: </label>
-                        <input type="text" class="form-control" name="txtApellido" autofocus required>
+                        <label class="form-label">Descripcion: </label>
+                        <input type="text" class="form-control" name="txtDescripcion" autofocus required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Correo: </label>
-                        <input type="text" class="form-control" name="txtCorreo" autofocus required>
+                        <label class="form-label">Fecha: </label>
+                        <input type="datetime" class="form-control" name="txtFecha" placeholder="<?= $fecha?>" disabled>
                     </div>
                     <div class="d-grid">
                         <input type="hidden" name="oculto" value="1">

@@ -9,9 +9,9 @@ require './php/header_indexlog.php'
   <div class="card-body" style="text-align: center;">
     <h5 class="card-title row justify-content-center">BIENVENIDOS!!</h5>
     <p class="card-text row justify-content-center">Seleccione que accion desea realizar</p>
-    <a href="" class="btn btn-primary">HOME Veterinaria</a>
-    <a href="" class="btn btn-primary">Registrar Persona</a>
-    <a href="" class="btn btn-primary">Registrar Terea</a>
+    <a href="./paginas_secundarias/index.php" class="btn btn-primary">HOME Veterinaria</a>
+    <a href="./crear_personas/index.php" class="btn btn-primary">Registrar Persona</a>
+    <a href="./crear_tareas/index.php" class="btn btn-primary">Registrar Terea</a>
   </div>
 </div>
 <?php

@@ -1,7 +1,8 @@
 <?php include './php/header_indexlog.php' ?>
 
 <div class="container">
-<div class="col-md-7">
+    <div class="row justify-content-center">
+    <div class="col-md-7">
             <!-- inicio alerta -->
             <?php
             if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta') {
@@ -58,9 +59,11 @@
             <?php
             }
             ?>
+    </div>
+</div>
 
-<img src="" alt="">
-        </div>
+<div class="container">
+</div>
             <div class="row justify-content-center">
                 <div class="">
                 </div>
@@ -89,5 +92,6 @@
                 </div>
             </div>
         </div>
+</div>
 
 <?php include './php/footer_indexlog.php' ?>

@@ -43,7 +43,7 @@ require '../header.php'
           <th>Comentarios</th>
         </tr>
         <?php
-        require_once '../php/conexion.php';
+        require_once '../php/db.php';
         $consulta = "SELECT * FROM informacion";
         $ejecutarConsulta = mysqli_query($mysqli, $consulta);
         $verFilas = mysqli_num_rows($ejecutarConsulta);
