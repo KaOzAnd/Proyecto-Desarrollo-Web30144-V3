@@ -10,9 +10,13 @@ require './php/header_indexlog.php'
     <h5 class="card-title row justify-content-center">BIENVENIDOS!!</h5>
     <p class="card-text row justify-content-center">Seleccione que accion desea realizar</p>
     <a href="./paginas_secundarias/index.php" class="btn btn-primary">HOME Veterinaria</a>
+    
+    
+    <div class="card-body" style="text-align: center;">
     <a href="./crear_personas/index.php" class="btn btn-primary">Registrar Persona</a>
-    <a href="./crear_tareas/index.php" class="btn btn-primary">Registrar Terea</a>
-    <a href="./crear_productos/index.php" class="btn btn-primary">Registrar Terea</a>
+    <a href="./crear_tareas/index.php" class="btn btn-primary">Registrar Tarea</a>
+    <a href="./crear_productos/index.php" class="btn btn-primary">Registrar Productos</a>
+    </div>
   </div>
 </div>
 <?php
