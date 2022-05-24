@@ -15,5 +15,6 @@ require './php/header_indexlog.php'
   </div>
 </div>
 <?php
+// Prueba de comentario 
 require ("./php/footer_indexlog.php");
 ?>
