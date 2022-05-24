@@ -34,6 +34,7 @@
                 <a href="../paginas_secundarias/formulario.php">Contacto</a>
                 <a href="../crear_personas/index.php">CRUD Personas</a>
                 <a href="../crear_tareas/index.php">CRUD Tareas</a>
+                <a href="../crear_productos/index.php">CRUD Productos</a>
             </nav>
         </div>
     </header>

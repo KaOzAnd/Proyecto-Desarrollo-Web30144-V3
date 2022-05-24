@@ -12,6 +12,7 @@ require './php/header_indexlog.php'
     <a href="./paginas_secundarias/index.php" class="btn btn-primary">HOME Veterinaria</a>
     <a href="./crear_personas/index.php" class="btn btn-primary">Registrar Persona</a>
     <a href="./crear_tareas/index.php" class="btn btn-primary">Registrar Terea</a>
+    <a href="./crear_productos/index.php" class="btn btn-primary">Registrar Terea</a>
   </div>
 </div>
 <?php
