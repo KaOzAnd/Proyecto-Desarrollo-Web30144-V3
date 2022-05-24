@@ -13,9 +13,9 @@ require './php/header_indexlog.php'
     
     
     <div class="card-body" style="text-align: center;">
-    <a href="./crear_personas/index.php" class="btn btn-primary">Registrar Persona</a>
-    <a href="./crear_tareas/index.php" class="btn btn-primary">Registrar Tarea</a>
-    <a href="./crear_productos/index.php" class="btn btn-primary">Registrar Productos</a>
+    <a href="./CRUD_personas/index.php" class="btn btn-primary">Registrar Persona</a>
+    <a href="./CRUD_tareas/index.php" class="btn btn-primary">Registrar Tarea</a>
+    <a href="./CRUD_productos/index.php" class="btn btn-primary">Registrar Productos</a>
     </div>
   </div>
 </div>
