@@ -9,7 +9,7 @@ require './php/header_indexlog.php'
   <div class="card-body" style="text-align: center;">
     <h5 class="card-title row justify-content-center">BIENVENIDOS!!</h5>
     <p class="card-text row justify-content-center">Seleccione que accion desea realizar</p>
-    <a href="./paginas_secundarias/index.php" class="btn btn-primary">HOME Veterinaria</a>
+    <a href="./paginas_secundarias/index.php" class="btn btn-primary">HOME MUNDO BIKERS</a>
     
     
     <div class="card-body" style="text-align: center;">

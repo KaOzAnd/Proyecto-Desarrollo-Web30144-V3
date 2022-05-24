@@ -10,7 +10,7 @@ require './php/header_indexlog.php'
     <h5 class="card-title">BIENVENIDOS!!</h5>
     <p class="card-text">Seleccione que accion desea realizar</p>
     <a href="./registrar.php" class="btn btn-primary">Registrarse</a>
-    <a href="./iniciar_seccion.php" class="btn btn-primary">Iniciar seccion</a>
+    <a href="./iniciar_seccion.php" class="btn btn-primary">Iniciar sesión</a>
   </div>
 </div>
 <?php

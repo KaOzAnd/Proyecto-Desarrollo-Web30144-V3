@@ -127,7 +127,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Descripcion: </label>
-                        <input type="text" class="form-control" name="txtDescripcion" autofocus required>
+                        <textarea name="txtDescripcion" class="form-control"  rows="10" autofocus required></textarea>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Fecha: </label>
